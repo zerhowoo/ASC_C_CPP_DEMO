@@ -1,0 +1,336 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\SPiiPlusCLibraryDemo.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\SPiiPlusCLibraryDemo.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SPIIPLUSCLIBRARYDEMO_DIALOG DIALOGEX 0, 0, 543, 539
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "SPiiPlusCLibraryDemo"
+FONT 9, "굴림", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Connection",IDC_STATIC,7,7,134,66
+    CONTROL         "Simulator",IDC_RDO_SIMULATOR,"Button",BS_AUTORADIOBUTTON | WS_GROUP,12,20,46,10
+    CONTROL         "TCP/IP",IDC_RDO_TCP,"Button",BS_AUTORADIOBUTTON,12,35,40,10
+    LTEXT           "IP",IDC_STATIC,65,21,8,8
+    LTEXT           "PORT",IDC_STATIC,64,36,20,8
+    EDITTEXT        IDC_EDT_IP,87,17,49,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_PORT,87,33,49,14,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "Connect",IDC_BTN_CONNECT,32,53,50,14
+    PUSHBUTTON      "Disconnect",IDC_BTN_DISCONN,85,53,50,14
+    PUSHBUTTON      "Close",IDC_BTN_CLOSE,486,369,50,16
+    LTEXT           "Axis No.",IDC_STATIC,16,92,29,8
+    COMBOBOX        IDC_CBO_AXISNO,54,89,44,106,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Motion Test",IDC_STATIC,7,77,329,253
+    GROUPBOX        "Parameters",IDC_STATIC,13,110,165,98
+    LTEXT           "Velocity (VEL)",IDC_STATIC,20,125,48,8
+    LTEXT           "Acceleration (ACC)",IDC_STATIC,20,141,64,8
+    LTEXT           "Deceleration (DEC)",IDC_STATIC,20,157,63,8
+    LTEXT           "Jerk (JERK)",IDC_STATIC,20,173,39,8
+    LTEXT           "Kill Deceleration (KDEC)",IDC_STATIC,20,189,80,8
+    EDITTEXT        IDC_EDT_VEL,117,122,53,14,ES_NUMBER
+    EDITTEXT        IDC_EDT_ACC,117,138,53,14,ES_NUMBER
+    EDITTEXT        IDC_EDT_DEC,117,154,53,14,ES_NUMBER
+    EDITTEXT        IDC_EDT_JERK,117,170,53,14,ES_NUMBER
+    EDITTEXT        IDC_EDT_KDEC,117,186,53,14,ES_NUMBER
+    GROUPBOX        "Move to Point",IDC_STATIC,13,211,165,77
+    LTEXT           "Position && Distance",IDC_STATIC,21,227,64,9
+    EDITTEXT        IDC_EDT_DISTANCE,117,224,53,14,ES_NUMBER
+    PUSHBUTTON      "Move to Position (Absolute position)",IDC_BTN_MOVETOPOINT,20,248,151,14
+    PUSHBUTTON      "Move Decrement",IDC_BTN_MOVEDEC,20,268,70,14
+    PUSHBUTTON      "Move Increment",IDC_BTN_MOVEINC,98,267,73,14
+    GROUPBOX        "Position Status",IDC_STATIC,182,110,147,98
+    LTEXT           "Moving",IDC_STATIC,189,226,24,8
+    LTEXT           "Accelerating",IDC_STATIC,189,242,41,8
+    LTEXT           "In Position",IDC_STATIC,189,258,35,8
+    LTEXT           "Enabled",IDC_STATIC,189,274,27,8
+    PUSHBUTTON      "Enable",IDC_BTN_ENABLE,174,89,49,14
+    PUSHBUTTON      "Disable",IDC_BTN_DISABLE,226,89,49,14
+    GROUPBOX        "Motor Status",IDC_STATIC,182,211,89,77
+    LTEXT           "Command Pos (RPOS)",IDC_STATIC,189,125,76,8
+    LTEXT           "Actual Pos (FPOS)",IDC_STATIC,189,141,62,8
+    LTEXT           "Actual Velocity (FVEL)",IDC_STATIC,189,157,74,8
+    LTEXT           "Position Error (PE)",IDC_STATIC,189,173,62,8
+    PUSHBUTTON      "Set zero actual position",IDC_BTN_SET_ZERO,237,188,87,14
+    EDITTEXT        IDC_EDT_RPOS,271,122,53,14,ES_READONLY | ES_NUMBER
+    EDITTEXT        IDC_EDT_FPOS,271,138,53,14,ES_READONLY | ES_NUMBER
+    EDITTEXT        IDC_EDT_FVEL,271,154,53,14,ES_READONLY | ES_NUMBER
+    EDITTEXT        IDC_EDT_PE,270,170,53,14,ES_READONLY | ES_NUMBER
+    PUSHBUTTON      "STOP",IDC_BTN_STOP,277,215,51,31
+    CONTROL         143,IDC_PIC_MOVE,"Static",SS_BITMAP,249,222,13,13
+    CONTROL         143,IDC_PIC_ACC,"Static",SS_BITMAP,249,238,13,13
+    CONTROL         143,IDC_PIC_INPOS,"Static",SS_BITMAP,249,254,13,13
+    CONTROL         143,IDC_PIC_ENABLE,"Static",SS_BITMAP,249,270,13,13
+    PUSHBUTTON      "STOP ALL",IDC_BTN_STOPALL,277,255,51,31
+    PUSHBUTTON      "Disable All",IDC_BTN_DISABLEALL,279,89,49,14
+    GROUPBOX        "System I/O",IDC_STATIC,145,7,191,66
+    LTEXT           "Axis No",IDC_STATIC,150,21,27,8
+    LTEXT           "Left Limit",IDC_STATIC,150,37,30,8
+    LTEXT           "Right Limit",IDC_STATIC,150,56,35,8
+    LTEXT           "0",IDC_STATIC,196,21,8,8
+    LTEXT           "1",IDC_STATIC,211,21,8,8
+    LTEXT           "2",IDC_STATIC,224,21,8,8
+    LTEXT           "3",IDC_STATIC,238,21,8,8
+    LTEXT           "4",IDC_STATIC,252,21,8,8
+    LTEXT           "5",IDC_STATIC,265,21,8,8
+    LTEXT           "6",IDC_STATIC,278,21,8,8
+    CONTROL         143,IDC_PIC_LL0,"Static",SS_BITMAP,193,36,9,11
+    CONTROL         143,IDC_PIC_LL1,"Static",SS_BITMAP,207,36,9,11
+    CONTROL         143,IDC_PIC_LL2,"Static",SS_BITMAP,221,36,9,11
+    CONTROL         143,IDC_PIC_LL3,"Static",SS_BITMAP,235,36,9,11
+    CONTROL         143,IDC_PIC_LL4,"Static",SS_BITMAP,249,36,9,11
+    CONTROL         143,IDC_PIC_LL5,"Static",SS_BITMAP,263,36,9,11
+    CONTROL         143,IDC_PIC_LL6,"Static",SS_BITMAP,277,36,9,11
+    CONTROL         143,IDC_PIC_LL7,"Static",SS_BITMAP,291,36,9,11
+    CONTROL         143,IDC_PIC_RL0,"Static",SS_BITMAP,193,54,9,11
+    CONTROL         143,IDC_PIC_RL1,"Static",SS_BITMAP,207,54,9,11
+    CONTROL         143,IDC_PIC_RL2,"Static",SS_BITMAP,221,54,9,11
+    CONTROL         143,IDC_PIC_RL3,"Static",SS_BITMAP,235,54,9,11
+    CONTROL         143,IDC_PIC_RL4,"Static",SS_BITMAP,249,54,9,11
+    CONTROL         143,IDC_PIC_RL5,"Static",SS_BITMAP,263,54,9,11
+    CONTROL         143,IDC_PIC_RL6,"Static",SS_BITMAP,277,54,9,11
+    CONTROL         143,IDC_PIC_RL7,"Static",SS_BITMAP,291,54,9,11
+    CONTROL         143,IDC_PIC_ES,"Static",SS_BITMAP,313,36,9,11
+    CTEXT           "EMG STOP",IDC_STATIC,306,17,23,17
+    LTEXT           "7",IDC_STATIC,294,21,8,8
+    GROUPBOX        "General I/O",IDC_STATIC,341,77,195,85
+    LTEXT           "Bit No.",IDC_STATIC,345,93,23,8
+    LTEXT           "INPUT",IDC_STATIC,345,110,22,8
+    LTEXT           "OUTPUT",IDC_STATIC,345,129,29,8
+    LTEXT           "0",IDC_STATIC,387,93,8,8
+    LTEXT           "1",IDC_STATIC,406,93,8,8
+    LTEXT           "2",IDC_STATIC,425,93,8,8
+    LTEXT           "3",IDC_STATIC,444,93,8,8
+    LTEXT           "4",IDC_STATIC,463,93,8,8
+    LTEXT           "5",IDC_STATIC,482,93,8,8
+    LTEXT           "6",IDC_STATIC,501,93,8,8
+    CONTROL         143,IDC_PIC_IN0,"Static",SS_BITMAP,384,108,9,11
+    CONTROL         143,IDC_PIC_OUT0,"Static",SS_BITMAP,384,126,9,11
+    LTEXT           "7",IDC_STATIC,520,93,8,8
+    PUSHBUTTON      "OFF",IDC_BTN_OUT0,380,142,17,14
+    CONTROL         143,IDC_PIC_IN1,"Static",SS_BITMAP,403,108,9,11
+    CONTROL         143,IDC_PIC_IN2,"Static",SS_BITMAP,422,108,9,11
+    CONTROL         143,IDC_PIC_IN3,"Static",SS_BITMAP,441,108,9,11
+    CONTROL         143,IDC_PIC_IN4,"Static",SS_BITMAP,460,108,9,11
+    CONTROL         143,IDC_PIC_IN5,"Static",SS_BITMAP,479,108,9,11
+    CONTROL         143,IDC_PIC_IN6,"Static",SS_BITMAP,498,108,9,11
+    CONTROL         143,IDC_PIC_IN7,"Static",SS_BITMAP,517,108,9,11
+    CONTROL         143,IDC_PIC_OUT1,"Static",SS_BITMAP,403,126,9,11
+    CONTROL         143,IDC_PIC_OUT2,"Static",SS_BITMAP,422,126,9,11
+    CONTROL         143,IDC_PIC_OUT3,"Static",SS_BITMAP,441,126,9,11
+    CONTROL         143,IDC_PIC_OUT4,"Static",SS_BITMAP,460,126,9,11
+    CONTROL         143,IDC_PIC_OUT5,"Static",SS_BITMAP,479,126,9,11
+    CONTROL         143,IDC_PIC_OUT6,"Static",SS_BITMAP,498,126,9,11
+    CONTROL         143,IDC_PIC_OUT7,"Static",SS_BITMAP,517,126,9,11
+    PUSHBUTTON      "OFF",IDC_BTN_OUT1,399,142,17,14
+    PUSHBUTTON      "OFF",IDC_BTN_OUT2,418,142,17,14
+    PUSHBUTTON      "OFF",IDC_BTN_OUT3,437,142,17,14
+    PUSHBUTTON      "OFF",IDC_BTN_OUT4,456,142,17,14
+    PUSHBUTTON      "OFF",IDC_BTN_OUT5,475,142,17,14
+    PUSHBUTTON      "OFF",IDC_BTN_OUT6,494,142,17,14
+    PUSHBUTTON      "OFF",IDC_BTN_OUT7,513,142,17,14
+    GROUPBOX        "Buffer Program Control",IDC_STATIC,342,7,194,65
+    LTEXT           "Buffer No.",IDC_STATIC,345,25,33,8
+    COMBOBOX        IDC_CBO_BUFFER_NO,379,23,48,94,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Label",IDC_STATIC,432,26,19,8
+    EDITTEXT        IDC_EDT_PROG_LABEL,453,23,75,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "STOP",IDC_BTN_BUFFER_STOP,477,46,50,14
+    PUSHBUTTON      "START",IDC_BTN_BUFFER_START,422,46,50,14
+    GROUPBOX        "Callback",IDC_STATIC,341,168,195,162
+    PUSHBUTTON      "MOTION END",IDC_BTN_CALLBACK_MOTIONEND,346,180,59,14
+    PUSHBUTTON      "PROGRAM END",IDC_BTN_CALLBACK_PROGEND,409,180,59,14
+    PUSHBUTTON      "INPUT",IDC_BTN_CALLBACK_INPUT,471,180,59,14
+    LISTBOX         IDC_LST_CALLBACK,346,198,184,126,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Jog",IDC_STATIC,12,292,259,33
+    PUSHBUTTON      "Negative Direction",IDC_BTN_JOG_NEGATIVE,127,303,66,14
+    PUSHBUTTON      "Positive Direction",IDC_BTN_JOG_POSITIVE,198,303,66,14
+    CONTROL         "Use Velocity",IDC_CHK_JOG_VELOCITY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,305,53,10
+    EDITTEXT        IDC_EDT_JOG_VELOCITY,77,303,45,14,ES_AUTOHSCROLL
+    GROUPBOX        "Sync Axes",IDC_STATIC,7,334,147,51
+    PUSHBUTTON      "Set Sync.",IDC_BTN_SYNC_SET,96,346,50,14
+    LTEXT           "Master Axis",IDC_STATIC,17,350,40,8
+    COMBOBOX        IDC_CBO_SYNC_MS,62,346,30,94,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Slave Axis",IDC_STATIC,17,367,35,8
+    COMBOBOX        IDC_CBO_SYNC_SL,62,365,30,82,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Release",IDC_BTN_SYNC_RELEASE,96,365,50,14
+    GROUPBOX        "Multi Speed Move",IDC_STATIC,158,334,310,50
+    LTEXT           "1st Position",IDC_STATIC,236,350,38,8
+    LTEXT           "1st Velocity",IDC_STATIC,236,368,38,8
+    LTEXT           "2nd Position",IDC_STATIC,325,350,40,8
+    LTEXT           "2nd Velocity",IDC_STATIC,325,368,40,8
+    PUSHBUTTON      "Move",IDC_BTN_MOVE_MULSPD,413,347,50,14
+    EDITTEXT        IDC_EDT_POS_1ST,276,347,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_POS_2ND,368,347,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_VEL_1ST,276,365,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_VEL_2ND,368,365,40,14,ES_AUTOHSCROLL
+    LTEXT           "Axis No.",IDC_STATIC,165,349,29,8
+    COMBOBOX        IDC_CBO_AXIS_MULSPD,198,347,30,82,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Communication Terminal",IDC_STATIC,7,389,529,143
+    EDITTEXT        IDC_EDT_COMMAND,14,402,463,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Send",IDC_BTN_SEND_CMD,481,402,50,14
+    CONTROL         "",IDC_REDT_CMD_RESULT,"RichEdit20A",ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | WS_BORDER | WS_VSCROLL | WS_TABSTOP,13,420,519,107
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204B0"
+        BEGIN
+            VALUE "FileDescription", "SPiiPlusCLibraryDemo MFC 응용 프로그램"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "SPiiPlusCLibraryDemo"
+            VALUE "LegalCopyright", "Copyright (C) 2012"
+            VALUE "OriginalFilename", "SPiiPlusCLibraryDemo.EXE"
+            VALUE "ProductName", "SPiiPlusCLibraryDemo 응용 프로그램"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_SPIIPLUSCLIBRARYDEMO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 536
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 532
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_ERR                 BITMAP                  "Images\\Error.bmp"
+IDB_OFF                 BITMAP                  "Images\\Off.bmp"
+IDB_ON                  BITMAP                  "Images\\On.bmp"
+#endif    // 한국어 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 18, 1
+#pragma code_page(949)
+#endif //_WIN32
+#include "res\SPiiPlusCLibraryDemo.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.kor\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

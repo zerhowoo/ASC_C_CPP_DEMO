@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Examples-Alma9|ARM">
+      <Configuration>Examples-Alma9</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Examples-Alma9|ARM64">
+      <Configuration>Examples-Alma9</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Examples-Alma9|x64">
+      <Configuration>Examples-Alma9</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Examples-Alma9|x86">
+      <Configuration>Examples-Alma9</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Examples-RHEL|ARM">
+      <Configuration>Examples-RHEL</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Examples-RHEL|ARM64">
+      <Configuration>Examples-RHEL</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Examples-RHEL|x64">
+      <Configuration>Examples-RHEL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Examples-RHEL|x86">
+      <Configuration>Examples-RHEL</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Examples-UBUNTU-22|ARM">
+      <Configuration>Examples-UBUNTU-22</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Examples-UBUNTU-22|ARM64">
+      <Configuration>Examples-UBUNTU-22</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Examples-UBUNTU-22|x64">
+      <Configuration>Examples-UBUNTU-22</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Examples-UBUNTU-22|x86">
+      <Configuration>Examples-UBUNTU-22</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Examples-UBUNTU-18|ARM">
+      <Configuration>Examples-UBUNTU-18</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Examples-UBUNTU-18|ARM64">
+      <Configuration>Examples-UBUNTU-18</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Examples-UBUNTU-18|x64">
+      <Configuration>Examples-UBUNTU-18</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Examples-UBUNTU-18|x86">
+      <Configuration>Examples-UBUNTU-18</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Examples-UBUNTU-24|ARM">
+      <Configuration>Examples-UBUNTU-24</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Examples-UBUNTU-24|ARM64">
+      <Configuration>Examples-UBUNTU-24</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Examples-UBUNTU-24|x64">
+      <Configuration>Examples-UBUNTU-24</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Examples-UBUNTU-24|x86">
+      <Configuration>Examples-UBUNTU-24</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E0AA68E3-FF1D-4DBF-8FEF-8DCA09094984}</ProjectGuid>
+    <Keyword>Linux</Keyword>
+    <RootNamespace>MeasurementsDemo</RootNamespace>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <ApplicationType>Linux</ApplicationType>
+    <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
+    <TargetLinuxPlatform>Generic</TargetLinuxPlatform>
+    <LinuxProjectType>{D51BCBC9-82E9-4017-911E-C93873C4EA2B}</LinuxProjectType>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Examples-RHEL|ARM'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Examples-Alma9|ARM'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Examples-RHEL|x86'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Examples-Alma9|x86'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Examples-RHEL|x64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Examples-Alma9|x64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Examples-RHEL|ARM64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Examples-Alma9|ARM64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Examples-UBUNTU-18|ARM64'">
+    <PlatformToolset>Remote_GCC_1_0</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Examples-UBUNTU-22|ARM64'" Label="Configuration">
+    <PlatformToolset>Remote_GCC_1_0</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Examples-UBUNTU-24|ARM64'" Label="Configuration">
+    <PlatformToolset>Remote_GCC_1_0</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Examples-UBUNTU-18|ARM'">
+    <PlatformToolset>Remote_GCC_1_0</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Examples-UBUNTU-22|ARM'" Label="Configuration">
+    <PlatformToolset>Remote_GCC_1_0</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Examples-UBUNTU-24|ARM'" Label="Configuration">
+    <PlatformToolset>Remote_GCC_1_0</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Examples-UBUNTU-18|x64'">
+    <PlatformToolset>Remote_GCC_1_0</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Examples-UBUNTU-22|x64'" Label="Configuration">
+    <PlatformToolset>Remote_GCC_1_0</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Examples-UBUNTU-24|x64'" Label="Configuration">
+    <PlatformToolset>Remote_GCC_1_0</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Examples-UBUNTU-18|x86'">
+    <PlatformToolset>Remote_GCC_1_0</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Examples-UBUNTU-22|x86'" Label="Configuration">
+    <PlatformToolset>Remote_GCC_1_0</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Examples-UBUNTU-24|x86'" Label="Configuration">
+    <PlatformToolset>Remote_GCC_1_0</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <ItemGroup>
+    <ClCompile Include="LinuxDefs.cpp" />
+    <ClCompile Include="MeasurementsDemo.cpp" />
+    <ClCompile Include="PreciseTimer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LinuxDefs.h" />
+    <ClInclude Include="PreciseTimer.h" />
+  </ItemGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>/usr/include/ACSMotionControl/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>/usr/lib/ACSMotionControl/libACSCL_x64.so;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Examples-RHEL|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>/usr/include/ACSMotionControl/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>/usr/lib/ACSMotionControl/libACSCL_x64.so;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <RemotePostBuildEvent>
+      <Command>cp -r /home/vmtester/projects/MeasurementsDemo.Linux  /home/vmtester/rpmbuild/SOURCES</Command>
+    </RemotePostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Examples-Alma9|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>/usr/include/ACSMotionControl/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>/usr/lib/ACSMotionControl/libACSCL_x64.so;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <RemotePostBuildEvent>
+      <Command>cp -r /home/vmtester/projects/MeasurementsDemo.Linux  /home/vmtester/rpmbuild/SOURCES</Command>
+    </RemotePostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Examples-UBUNTU-18|x64'">
+    <Link>
+      <AdditionalDependencies>/usr/lib/ACSMotionControl/libACSCL_x64.so;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(RemoteRootDir)/ACS.Client.Linux/ACS.Client</AdditionalIncludeDirectories>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+    </ClCompile>
+    <RemotePostBuildEvent>
+      <Command>cp -r /home/vmtester/projects/MeasurementsDemo.Linux /home/vmtester/ACS_SC_Package/usr/share/samples/ &amp;&amp; cp -r /home/vmtester/projects/MeasurementsDemo.Linux /home/vmtester/ACSPackage/usr/share/samples/</Command>
+    </RemotePostBuildEvent>
+    <RemotePreBuildEvent>
+      <Command>mkdir -pv /home/vmtester/ACS_SC_Package/usr/share/samples/MeasurementsDemo.Linux/ &amp;&amp; mkdir -pv /home/vmtester/ACSPackage/usr/share/samples/MeasurementsDemo.Linux/ </Command>
+    </RemotePreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Examples-UBUNTU-22|x64'">
+    <Link>
+      <AdditionalDependencies>/usr/lib/ACSMotionControl/libACSCL_x64.so;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(RemoteRootDir)/ACS.Client.Linux/ACS.Client</AdditionalIncludeDirectories>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+    </ClCompile>
+    <RemotePostBuildEvent>
+      <Command>cp -r /home/vmtester/projects/MeasurementsDemo.Linux /home/vmtester/ACS_SC_Package/usr/share/samples/ &amp;&amp; cp -r /home/vmtester/projects/MeasurementsDemo.Linux /home/vmtester/ACSPackage/usr/share/samples/</Command>
+    </RemotePostBuildEvent>
+    <RemotePreBuildEvent>
+      <Command>mkdir -pv /home/vmtester/ACS_SC_Package/usr/share/samples/MeasurementsDemo.Linux/ &amp;&amp; mkdir -pv /home/vmtester/ACSPackage/usr/share/samples/MeasurementsDemo.Linux/ </Command>
+    </RemotePreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Examples-UBUNTU-24|x64'">
+    <Link>
+      <AdditionalDependencies>/usr/lib/ACSMotionControl/libACSCL_x64.so;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(RemoteRootDir)/ACS.Client.Linux/ACS.Client</AdditionalIncludeDirectories>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+    </ClCompile>
+    <RemotePostBuildEvent>
+      <Command>cp -r /home/vmtester/projects/MeasurementsDemo.Linux /home/vmtester/ACSPackage/usr/share/samples/</Command>
+    </RemotePostBuildEvent>
+    <RemotePreBuildEvent>
+      <Command>mkdir -pv /home/vmtester/ACS_SC_Package/usr/share/samples/MeasurementsDemo.Linux/ &amp;&amp; mkdir -pv /home/vmtester/ACSPackage/usr/share/samples/MeasurementsDemo.Linux/ </Command>
+    </RemotePreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Examples-UBUNTU-22|ARM64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(RemoteRootDir)/ACS.Client.Linux/ACS.Client</AdditionalIncludeDirectories>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>/usr/lib/ACSMotionControl/libACSCL_ARM64.so;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <RemotePostBuildEvent>
+      <Command>cp -r /home/vmtester/projects/MeasurementsDemo.Linux /home/vmtester/ACSPackage/usr/share/samples/</Command>
+    </RemotePostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Examples-UBUNTU-24|ARM64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(RemoteRootDir)/ACS.Client.Linux/ACS.Client</AdditionalIncludeDirectories>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>/usr/lib/ACSMotionControl/libACSCL_ARM64.so;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <RemotePostBuildEvent>
+      <Command>cp -r /home/vmtester/projects/MeasurementsDemo.Linux /home/vmtester/ACSPackage/usr/share/samples/</Command>
+    </RemotePostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Examples-Alma9|ARM64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>/usr/include/ACSMotionControl/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>/usr/lib/ACSMotionControl/libACSCL_ARM64.so;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <RemotePostBuildEvent>
+      <Command>cp -r /home/vmtester/projects/MeasurementsDemo.Linux  /home/vmtester/rpmbuild/SOURCES</Command>
+    </RemotePostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
