@@ -8,15 +8,15 @@
 |------|------|
 | 操作系统 | Windows 11 64 位 |
 | IDE | Visual Studio 2019 或更高版本（需安装 **"使用 C++ 的桌面开发"** 工作负载，包含 MFC 组件） |
-| ACS 软件包 | SPiiPlus ADK Suite（建议 v2.70 及以上），安装后会自动部署所需的 DLL 和驱动 |
+| ACS 软件包 | SPiiPlus ADK Suite **v3.14.01**，安装后会自动部署所需的 DLL 和驱动 |
 | 控制器 | ACS SPiiPlus 系列控制器（实物），或使用 SPiiPlus Simulator 仿真模式 |
 
 ### 2. 安装 SPiiPlus ADK Suite
 
-1. 从 ACS Motion Control 官方获取 **SPiiPlus ADK Suite** 安装包。
+1. 从 ACS Motion Control 官方（或设备供应商）获取 **SPiiPlus ADK Suite v3.14.01** 安装包。
 2. 运行安装程序，默认安装路径为：
    ```
-   C:\Program Files (x86)\ACS Motion Control\SPiiPlus ADK Suite v2.70\
+   C:\Program Files (x86)\ACS Motion Control\SPiiPlus ADK Suite v3.14.01\
    ```
 3. 安装完成后，安装程序会自动将以下 DLL 文件放置到系统目录中：
    - `ACSCL_x64.DLL` → `C:\Windows\System32\`（64 位系统的 64 位 DLL）
